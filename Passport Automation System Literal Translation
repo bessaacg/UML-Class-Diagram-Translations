@@ -1,0 +1,49 @@
+There are 6 boxes in the diagram
+Box 1 is a rectangle and is titled System
+Box 2 is a rectangle and is titled «Services»
+Box 3 is a rectangle and is titled Application
+Box 4 is a rectangle and is titled Officer
+Box 5 is a rectangle and is titled Applicant
+Box 6 is a square and is titled AbstractClass
+
+The System box has 3 compartments seperated by 2 horizontal lines
+The «Services» box has 3 compartments seperated by 2 horizontal lines
+The Application box has 3 compartments seperated by 2 horizontal lines
+The Officer box has 3 compartments seperated by 2 horizontal lines
+The Applicant box has 3 compartments seperated by 2 horizontal lines
+The AbstractClass box has 3 compartments seperated by 2 horizontal lines
+
+
+System box has the following texts in its compartments 
+Compartment 1:   System 
+Compartment 2:   +StartApplicationProcess(),  +EndApplicationProcess()
+
+«Services» box has the following texts in its compartments 
+Compartment 1:   «Services»,  Database 
+Compartment 2:   +StoreApplication(),  +RetrieveApplication()
+
+Application box has the following texts in its compartments 
+Compartment 1:   Application 
+Compartment 2:   +ApplicationID,  +Status 
+Compartment 3:   +SubmitApplication(),  +UpdateApplicationStatus()
+
+Officer box has the following texts in its compartments 
+Compartment 1:   Officer 
+Compartment 2:   +OfficerID,  +Name 
+Compartment 3:   +VerifyApplication()
+
+Applicant box has the following texts in its compartments 
+Compartment 1:   Applicant 
+Compartment 2:   +Name,  +DateOfBirth,  +Address 
+Compartment 3:   +ApplyForPassport()
+
+AbstractClass box has the following texts in its compartments 
+Compartment 1:   AbstractClass,  Passport 
+Compartment 2:   +PassportNo,  +IssueDate,  +ExpiryDate,  +IssuePlace 
+Compartment 3:   +ValidatePassport()
+
+Connections
+===========
+A straight line with a white triangle head connects rectangles  System and «Services»
+A straight line with an arrow connects rectangles  «Services» Officer Applicant AbstractClass and Application
+A straight line with a white diamond head connects rectangles  Application and Applicant
