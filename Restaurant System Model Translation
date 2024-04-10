@@ -1,0 +1,50 @@
+There are 8 classes in the diagram
+These classes are Materials, Meal, Cash, Payment, Order, Menu, Restaurant, and Customer. See details below:
+Class 1: Materials
+Attributes: 
+ private Stock
+ private Duration
+
+Class 2: Meal
+Attributes: 
+ private Price
+ private PreparationTime
+ private Recipe
+
+Class 3: Cash
+Attributes: 
+ private Amount
+
+Class 4: Payment
+Attributes: 
+ private Amount
+
+Class 5: Order
+Attributes: 
+ private Items
+ private Amount
+ private OrderType
+ private TotalPrice
+
+Class 6: Menu
+Attributes: 
+ private Items
+ private Price
+
+Class 7: Restaurant
+Attributes: 
+ private Name
+ private Capacity
+
+Class 8: Customer
+Attributes: 
+ private Name
+ private Address
+ private Credit
+
+
+Class Relationships`
+===================
+There is a relationship between  Restaurant Order Customer and Meal
+There is an aggregation relationship between  Menu Cash Payment Materials Meal and Restaurant
+There is an associative relationship between  Meal Order Payment and Menu
