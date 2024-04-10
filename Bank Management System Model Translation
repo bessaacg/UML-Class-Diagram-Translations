@@ -1,0 +1,74 @@
+There are 7 classes in the diagram
+These classes are Savings Account, Current Account, ATM Transaction, Account, ATM, Customer, and Bank Account. See details below:
+Class 1: Savings Account
+Attributes: 
+ public  string account_title 
+Methods: 
+ public view_account()
+
+Class 2: Current Account
+Attributes: 
+ public  string account_title 
+Methods: 
+ public view_account()
+
+Class 3: ATM Transaction
+Attributes: 
+ public  int transaction_id 
+ public  datetime transaction_date 
+ public  int transaction_type 
+ public  float transaction_amount 
+ public  float post_balance 
+Methods: 
+ public modified()
+
+Class 4: Account
+Attributes: 
+ public  int Account_number 
+ public  float Account_balace 
+ public  int account_description 
+Methods: 
+ public add_account()
+ public delete_account()
+ public edit_account()
+ public search_account()
+
+Class 5: ATM
+Attributes: 
+ public  int ATM_location 
+ public  int ATM_managedBy 
+Methods: 
+ public deposit()
+ public withdrawal()
+ public check_balance()
+
+Class 6: Customer
+Attributes: 
+ public  int customer_id 
+ public  string customer_name 
+ public  string customer_email 
+ public  string customer_phoneNo 
+ public  string customer_password 
+ public  string customer_username 
+ public  int customer_cardNo 
+Methods: 
+ public add_customer()
+ public delete_customer()
+ public edit_customer()
+ public search_customer()
+ public verify_password()
+
+Class 7: Bank Account
+Attributes: 
+ public  int code 
+ public  int address 
+ public  string name 
+Methods: 
+ public getAccount()
+
+
+Class Relationships`
+===================
+There is a generalisation relationship between  Savings Account Current Account and Account
+There is a relationship between  ATM ATM Transaction Account and Customer
+There is an aggregation relationship between  ATM Account and Bank Account
