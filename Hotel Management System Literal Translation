@@ -1,0 +1,64 @@
+There are 8 boxes in the diagram
+Box 1 is a rectangle and is titled Notification
+Box 2 is a rectangle and is titled RoomBooking
+Box 3 is a rectangle and is titled Room
+Box 4 is a rectangle and is titled Guest
+Box 5 is a rectangle and is titled Receptionist
+Box 6 is a rectangle and is titled Account
+Box 7 is a rectangle and is titled Person
+Box 8 is a rectangle and is titled Hotel
+
+The Notification box has 3 compartments seperated by 2 horizontal lines
+The RoomBooking box has 3 compartments seperated by 2 horizontal lines
+The Room box has 3 compartments seperated by 2 horizontal lines
+The Guest box has 3 compartments seperated by 2 horizontal lines
+The Receptionist box has 3 compartments seperated by 2 horizontal lines
+The Account box has 3 compartments seperated by 2 horizontal lines
+The Person box has 3 compartments seperated by 2 horizontal lines
+The Hotel box has 3 compartments seperated by 2 horizontal lines
+
+
+Notification box has the following texts in its compartments 
+Compartment 1:   Notification 
+Compartment 2:   + notificationId : int,  + createdOn : date,  + content : string 
+Compartment 3:   + send()
+
+RoomBooking box has the following texts in its compartments 
+Compartment 1:   RoomBooking 
+Compartment 2:   + reservationNumber : string,  + startDate : date,  + durationDays : int,  + status : BookingStatus,  + endTime : datetime 
+Compartment 3:   fetchDetail()
+
+Room box has the following texts in its compartments 
+Compartment 1:   Room 
+Compartment 2:   + roomNumber : string,  + style : RoomStyle,  + status : RoomStatus,  + bookingPrice : double 
+Compartment 3:   + isRoomAvailable()
+
+Guest box has the following texts in its compartments 
+Compartment 1:   Guest 
+Compartment 2:   + totalRoomsBooked : int 
+Compartment 3:   + createBooking()
+
+Receptionist box has the following texts in its compartments 
+Compartment 1:   Receptionist 
+Compartment 2:   + createBooking()
+
+Account box has the following texts in its compartments 
+Compartment 1:   Account 
+Compartment 2:   - id : int,  - password : string,  + status : AccountStatus 
+Compartment 3:   + resetPassword()
+
+Person box has the following texts in its compartments 
+Compartment 1:   Person 
+Compartment 2:   - name : string,  - address : string,  - email : string,  - phone : string,  + accountType : AccountType
+
+Hotel box has the following texts in its compartments 
+Compartment 1:   Hotel 
+Compartment 2:   - name : string,  - location : string 
+Compartment 3:   + getRooms()
+
+Connections
+===========
+A straight line a straight line  connects rectangles  Person Guest RoomBooking and Receptionist
+A straight line with an arrow connects rectangles  RoomBooking and Room
+A straight line  connects rectangles  Notification and RoomBooking
+A straight line with a black diamond head connects rectangles  Account Room Hotel and Person
