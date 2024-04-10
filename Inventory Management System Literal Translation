@@ -1,0 +1,64 @@
+There are 8 boxes in the diagram
+Box 1 is a rectangle and is titled Stock
+Box 2 is a rectangle and is titled Inventory
+Box 3 is a square and is titled Supplier
+Box 4 is a rectangle and is titled Customer
+Box 5 is a rectangle and is titled User
+Box 6 is a rectangle and is titled Payment
+Box 7 is a rectangle and is titled Permission
+Box 8 is a rectangle and is titled Role
+
+The Stock box has 3 compartments seperated by 2 horizontal lines
+The Inventory box has 3 compartments seperated by 2 horizontal lines
+The Supplier box has 3 compartments seperated by 2 horizontal lines
+The Customer box has 3 compartments seperated by 2 horizontal lines
+The User box has 3 compartments seperated by 2 horizontal lines
+The Payment box has 3 compartments seperated by 2 horizontal lines
+The Permission box has 3 compartments seperated by 2 horizontal lines
+The Role box has 3 compartments seperated by 2 horizontal lines
+
+
+Stock box has the following texts in its compartments 
+Compartment 1:   Stock 
+Compartment 2:   +stock_id : int,  +stock_description : string,  +stock_number : string,  +stock_type : string,  +stock_items : string 
+Compartment 3:   +addStock(),  +editStock(),  +deleteStock(),  +searchStock(0
+
+Inventory box has the following texts in its compartments 
+Compartment 1:   Inventory 
+Compartment 2:   +inventory_id : int,  +inventory_description : string,  +inventory_number : string,  +inventory_type : string,  +inventory_items : string 
+Compartment 3:   +addInventory(),  +editInventory(),  +deleteInventory(),  +searchInventory()
+
+Supplier box has the following texts in its compartments 
+Compartment 1:   Supplier 
+Compartment 2:   +supplier_id : int,  +supplier_name : string,  +supplier_mobile : string,  +supplier_email : string,  +supplier_address : string,  +supplier_password : string,  +supplier_username : string 
+Compartment 3:   +addSupplier(),  +editSupplier(),  +deleteSupplier(),  +searchSupplier()
+
+Customer box has the following texts in its compartments 
+Compartment 1:   Customer 
+Compartment 2:   +customer_id : int,  +customer_name : string,  +customer_mobile :string,  +customer_email : string,  +customer_password : string,  +customer_username : string,  +customer_address : string 
+Compartment 3:   +addCustomer(),  +editCustomer(),  +deleteCustomer(),  +searchCustomer()
+
+User box has the following texts in its compartments 
+Compartment 1:   User 
+Compartment 2:   +user_id : int,  +user_role_id : int,  +user_name : string,  +user_email : string,  +user_dob : date,  +user_address : string 
+Compartment 3:   +addUser(),  +editUser(),  +deleteUser(),  +searchUser()
+
+Payment box has the following texts in its compartments 
+Compartment 1:   Payment 
+Compartment 2:   +payment_id : int,  +payment_customer_id : int,  +payment_amount : string,  +payment_description : string,  +payment_date : date 
+Compartment 3:   +addPayment(),  +editPayment(),  +deletePayment(),  +searchPayment()
+
+Permission box has the following texts in its compartments 
+Compartment 1:   Permission 
+Compartment 2:   +permission_id : int,  +permission_role_id : int,  +permission_title : string,  +permission_module : string,  +permission_description : string 
+Compartment 3:   +addPermission(),  +editPermission(),  +deletePermission(),  +searchPermission()
+
+Role box has the following texts in its compartments 
+Compartment 1:   Role 
+Compartment 2:   role_id : int,  role_title : string,  role_description : string 
+Compartment 3:   +addRole(),  +editRole(),  +deleteRole(),  +searchRole(),  +assignRole()
+
+Connections
+===========
+A straight line with a white diamond head connects rectangles  Payment Inventory and Permission
+A straight line a straight line  connects rectangles  Permission Stock User Role and Customer
