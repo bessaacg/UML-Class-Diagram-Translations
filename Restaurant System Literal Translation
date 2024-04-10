@@ -1,0 +1,58 @@
+There are 8 boxes in the diagram
+Box 1 is a square and is titled Materials
+Box 2 is a rectangle and is titled Meal
+Box 3 is a rectangle and is titled Cash
+Box 4 is a rectangle and is titled Payment
+Box 5 is a rectangle and is titled Order
+Box 6 is a rectangle and is titled Menu
+Box 7 is a rectangle and is titled Restaurant
+Box 8 is a rectangle and is titled Customer
+
+The Materials box has 2 compartments seperated by 1 horizontal lines
+The Meal box has 2 compartments seperated by 1 horizontal lines
+The Cash box has 2 compartments seperated by 1 horizontal lines
+The Payment box has 2 compartments seperated by 1 horizontal lines
+The Order box has 2 compartments seperated by 1 horizontal lines
+The Menu box has 2 compartments seperated by 1 horizontal lines
+The Restaurant box has 2 compartments seperated by 1 horizontal lines
+The Customer box has 2 compartments seperated by 1 horizontal lines
+
+
+Materials box has the following texts in its compartments 
+Compartment 1:   Materials 
+Compartment 2:   Stock,  Duration
+
+Meal box has the following texts in its compartments 
+Compartment 1:   Meal 
+Compartment 2:   Price,  PreparationTime,  Recipe
+
+Cash box has the following texts in its compartments 
+Compartment 1:   Cash 
+Compartment 2:   Amount
+
+Payment box has the following texts in its compartments 
+Compartment 1:   Payment 
+Compartment 2:   Amount
+
+Order box has the following texts in its compartments 
+Compartment 1:   Order 
+Compartment 2:   Items,  Amount,  OrderType,  TotalPrice
+
+Menu box has the following texts in its compartments 
+Compartment 1:   Menu 
+Compartment 2:   Items,  Price
+
+Restaurant box has the following texts in its compartments 
+Compartment 1:   Restaurant 
+Compartment 2:   Name,  Capacity
+
+Customer box has the following texts in its compartments 
+Compartment 1:   Customer 
+Compartment 2:   Name,  Address,  Credit
+
+Connections
+===========
+A straight line a straight line  connects rectangles  Restaurant and Meal
+A straight line with a white diamond head connects rectangles  Menu Cash Payment Materials Meal and Restaurant
+A straight line with an arrow connects rectangles  Meal Order Payment and Menu
+A straight line  connects rectangles  Order and Customer
