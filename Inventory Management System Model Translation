@@ -1,0 +1,115 @@
+There are 8 classes in the diagram
+These classes are Stock, Inventory, Supplier, Customer, User, Payment, Permission, and Role. See details below:
+Class 1: Stock
+Attributes: 
+ public  int stock_id 
+ public  string stock_description 
+ public  string stock_number 
+ public  string stock_type 
+ public  string stock_items 
+Methods: 
+ public addStock()
+ public editStock()
+ public deleteStock()
+ public searchStock(0
+
+Class 2: Inventory
+Attributes: 
+ public  int inventory_id 
+ public  string inventory_description 
+ public  string inventory_number 
+ public  string inventory_type 
+ public  string inventory_items 
+Methods: 
+ public addInventory()
+ public editInventory()
+ public deleteInventory()
+ public searchInventory()
+
+Class 3: Supplier
+Attributes: 
+ public  int supplier_id 
+ public  string supplier_name 
+ public  string supplier_mobile 
+ public  string supplier_email 
+ public  string supplier_address 
+ public  string supplier_password 
+ public  string supplier_username 
+Methods: 
+ public addSupplier()
+ public editSupplier()
+ public deleteSupplier()
+ public searchSupplier()
+
+Class 4: Customer
+Attributes: 
+ public  int customer_id 
+ public  string customer_name 
+ public string customer_mobile 
+ public  string customer_email 
+ public  string customer_password 
+ public  string customer_username 
+ public  string customer_address 
+Methods: 
+ public addCustomer()
+ public editCustomer()
+ public deleteCustomer()
+ public searchCustomer()
+
+Class 5: User
+Attributes: 
+ public  int user_id 
+ public  int user_role_id 
+ public  string user_name 
+ public  string user_email 
+ public  date user_dob 
+ public  string user_address 
+Methods: 
+ public addUser()
+ public editUser()
+ public deleteUser()
+ public searchUser()
+
+Class 6: Payment
+Attributes: 
+ public  int payment_id 
+ public  int payment_customer_id 
+ public  string payment_amount 
+ public  string payment_description 
+ public  date payment_date 
+Methods: 
+ public addPayment()
+ public editPayment()
+ public deletePayment()
+ public searchPayment()
+
+Class 7: Permission
+Attributes: 
+ public  int permission_id 
+ public  int permission_role_id 
+ public  string permission_title 
+ public  string permission_module 
+ public  string permission_description 
+Methods: 
+ public addPermission()
+ public editPermission()
+ public deletePermission()
+ public searchPermission()
+
+Class 8: Role
+Attributes: 
+ private  int role_id 
+ private  string role_title 
+ private  string role_description 
+Methods: 
+ public addRole()
+ public editRole()
+ public deleteRole()
+ public searchRole()
+ public assignRole()
+
+
+Class Relationships`
+===================
+There is an aggregation relationship between  Payment Inventory and Permission
+There is a relationship between  Permission Stock User Role and Customer
