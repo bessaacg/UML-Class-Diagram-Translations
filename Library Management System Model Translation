@@ -1,0 +1,81 @@
+There are 10 classes in the diagram
+These classes are Facaulty, Student, Bill, MemberRecord, StudyBooks, Magazines, Journals, Transaction, Librarian, and Book. See details below:
+Class 1: Facaulty
+
+Class 2: Student
+
+Class 3: Bill
+Attributes: 
+ public billNo
+ public date
+ public memberId
+ public amount
+Methods: 
+ public billCreate()
+ public billUpdate()
+
+Class 4: MemberRecord
+Attributes: 
+ public memberId
+ public type
+ public dateOfMembership
+ public noBooksIssued
+ public maxBookLimit
+ public name
+ public address
+ public phoneNo
+Methods: 
+ public retrieveMember()
+ public increaseBookIssued()
+ public decreaseBookIssued()
+ public payBill()
+
+Class 5: StudyBooks
+
+Class 6: Magazines
+
+Class 7: Journals
+
+Class 8: Transaction
+Attributes: 
+ public transId
+ public memberId
+ public bookId
+ public dateOfIssue
+ public dueDate
+Methods: 
+ public createTransaction()
+ public deleteTransaction()
+ public retrieveTransaction()
+
+Class 9: Librarian
+Attributes: 
+ public name
+ public password
+Methods: 
+ public searchBook()
+ public verifyMember()
+ public issueBook()
+ public calculateFine()
+ public createBill()
+ public returnBook()
+
+Class 10: Book
+Attributes: 
+ public bookId
+ public author
+ public name
+ public price
+ public rackNo
+ public status
+ public edition
+ public dateOfPurchase
+Methods: 
+ public displayBookDetails()
+ public updateStatus()
+
+
+Class Relationships`
+===================
+There is a relationship between  Transaction Bill MemberRecord and Librarian
+There is a generalisation relationship between  Facaulty Student StudyBooks Magazines Book Journals and MemberRecord
