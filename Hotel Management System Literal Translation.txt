@@ -1,0 +1,59 @@
+There are 7 boxes in the diagram
+Box 1 is a rectangle and is titled Savings Account
+Box 2 is a rectangle and is titled Current Account
+Box 3 is a rectangle and is titled ATM Transaction
+Box 4 is a rectangle and is titled Account
+Box 5 is a rectangle and is titled ATM
+Box 6 is a rectangle and is titled Customer
+Box 7 is a rectangle and is titled Bank Account
+
+The Savings Account box has 3 compartments seperated by 2 horizontal lines
+The Current Account box has 3 compartments seperated by 2 horizontal lines
+The ATM Transaction box has 3 compartments seperated by 2 horizontal lines
+The Account box has 3 compartments seperated by 2 horizontal lines
+The ATM box has 3 compartments seperated by 2 horizontal lines
+The Customer box has 3 compartments seperated by 2 horizontal lines
+The Bank Account box has 3 compartments seperated by 2 horizontal lines
+
+
+Savings Account box has the following texts in its compartments 
+Compartment 1:   Savings Account 
+Compartment 2:   +account_title : string 
+Compartment 3:   +view_account()
+
+Current Account box has the following texts in its compartments 
+Compartment 1:   Current Account 
+Compartment 2:   +account_title : string 
+Compartment 3:   +view_account()
+
+ATM Transaction box has the following texts in its compartments 
+Compartment 1:   ATM Transaction 
+Compartment 2:   +transaction_id : int,  +transaction_date : datetime,  +transaction_type : int,  +transaction_amount : float,  +post_balance : float 
+Compartment 3:   +modified()
+
+Account box has the following texts in its compartments 
+Compartment 1:   Account 
+Compartment 2:   +Account_number : int,  +Account_balace : float,  +account_description : int 
+Compartment 3:   +add_account(),  +delete_account(),  +edit_account(),  +search_account()
+
+ATM box has the following texts in its compartments 
+Compartment 1:   ATM 
+Compartment 2:   +ATM_location : int,  +ATM_managedBy : int 
+Compartment 3:   +deposit(),  +withdrawal(),  +check_balance()
+
+Customer box has the following texts in its compartments 
+Compartment 1:   Customer 
+Compartment 2:   +customer_id : int,  +customer_name : string,  +customer_email : string,  +customer_phoneNo : string,  +customer_password : string,  +customer_username : string,  +customer_cardNo : int 
+Compartment 3:   +add_customer(),  +delete_customer(),  +edit_customer(),  +search_customer(),  +verify_password()
+
+Bank Account box has the following texts in its compartments 
+Compartment 1:   Bank Account 
+Compartment 2:   +code : int,  +address : int,  +name : string 
+Compartment 3:   +getAccount()
+
+Connections
+===========
+A straight line with a white triangle head connects rectangles  Savings Account Current Account and Account
+A straight line with a black triangle head connects rectangles  ATM and Customer
+A straight line  connects rectangles  ATM Transaction Customer and Account
+A straight line with a white diamond head connects rectangles  ATM Account and Bank Account
