@@ -1,0 +1,68 @@
+There are 8 classes in the diagram
+These classes are Notification, RoomBooking, Room, Guest, Receptionist, Account, Person, and Hotel. See details below:
+Class 1: Notification
+Attributes: 
+ public  int  notificationId 
+ public  date  createdOn 
+ public  string  content 
+Methods: 
+ public  send()
+
+Class 2: RoomBooking
+Attributes: 
+ public  string  reservationNumber 
+ public  date  startDate 
+ public  int  durationDays 
+ public  BookingStatus  status 
+ public  datetime  endTime 
+Methods: 
+ private fetchDetail()
+
+Class 3: Room
+Attributes: 
+ public  string  roomNumber 
+ public  RoomStyle  style 
+ public  RoomStatus  status 
+ public  double  bookingPrice 
+Methods: 
+ public  isRoomAvailable()
+
+Class 4: Guest
+Attributes: 
+ public  int  totalRoomsBooked 
+Methods: 
+ public  createBooking()
+
+Class 5: Receptionist
+Methods: 
+ public  createBooking()
+
+Class 6: Account
+Attributes: 
+ private  int  id 
+ private  string  password 
+ public  AccountStatus  status 
+Methods: 
+ public  resetPassword()
+
+Class 7: Person
+Attributes: 
+ private  string  name 
+ private  string  address 
+ private  string  email 
+ private  string  phone 
+ public  AccountType  accountType 
+
+Class 8: Hotel
+Attributes: 
+ private  string  name 
+ private  string  location 
+Methods: 
+ public  getRooms()
+
+
+Class Relationships`
+===================
+There is a relationship between  Person Notification RoomBooking Guest and Receptionist
+There is an associative relationship between  RoomBooking and Room
+There is a composition relationship between  Account Room Hotel and Person
