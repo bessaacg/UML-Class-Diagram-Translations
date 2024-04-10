@@ -1,0 +1,139 @@
+There are 17 classes in the diagram
+These classes are NoticeBoard, ClassEquipment, LabEquipment, Lab, Equipment, Classroom, Playground, Higher Secondary Student, Teacher, SupportStaff, Auditorium, Primary Student, Employee, Department, Student, Bus, and SchoolManagement. See details below:
+Class 1: NoticeBoard
+Attributes: 
+ private NewsList
+ private InchargeName
+Methods: 
+ private Display()
+ private AddContent()
+
+Class 2: ClassEquipment
+Attributes: 
+ private ClassId
+ private BenchCount
+ private FanCount
+ private LightCount
+
+Class 3: LabEquipment
+Attributes: 
+ private EquipmentName
+ private EquipmentCount
+
+Class 4: Lab
+Attributes: 
+ private LabId
+ private InchargeId
+ private LabName
+ private EquipmentId
+Methods: 
+ private LabDetails()
+ private IsOccupied()
+ private PayFine()
+
+Class 5: Equipment
+Attributes: 
+ private EquipmentId
+ private Cost
+Methods: 
+ private EquipmentDetails()
+ private PurchaseEquipment()
+ private Repair()
+
+Class 6: Classroom
+Attributes: 
+ private ClassId
+ private ClassName
+ private TeacherId
+ private StudentCount
+ private EquipmentId
+Methods: 
+ private ClassDetails()
+
+Class 7: Playground
+Attributes: 
+ private Area
+ private ClassId
+Methods: 
+ private IsOccupied()
+
+Class 8: Higher Secondary Student
+
+Class 9: Teacher
+
+Class 10: SupportStaff
+
+Class 11: Auditorium
+Attributes: 
+ private TotalSeats
+ private SeatsOccupied
+ private EventName
+ private EventDate
+ private EventTime
+Methods: 
+ private BookAuditorium()
+ private EventDetails()
+ private DisplaySeats()
+
+Class 12: Primary Student
+
+Class 13: Employee
+Attributes: 
+ private EmployeeId
+ private EmployeeName
+ private Salary
+ private DepartmentId
+Methods: 
+ private EmployeeDetails()
+ private CheckIn()
+ private ReceiveSalary()
+
+Class 14: Department
+Attributes: 
+ private DepartmentId
+ private DepartmentName
+ private InchargeName
+ private MemberLst
+Methods: 
+ private DepartmentDetails()
+
+Class 15: Student
+Attributes: 
+ private StudentId
+ private StudentName
+ private ClassId
+ private Section
+ private BusId
+Methods: 
+ private StudentDetails()
+ private PayFees()
+
+Class 16: Bus
+Attributes: 
+ private BusId
+ private DriverId
+ private AreaList
+ private BusNumber
+ private Capacity
+Methods: 
+ private BusDetails()
+ private ShowSeats()
+
+Class 17: SchoolManagement
+Attributes: 
+ private SchoolName
+ private Address
+ private ContactNumber
+ private MediumOfStudy
+Methods: 
+ private isOpen()
+ private SchoolDetails()
+
+
+Class Relationships`
+===================
+There is an associative relationship between  NoticeBoard Classroom Bus and Student
+There is a relationship between  Auditorium Lab Equipment Playground Student Teacher and SchoolManagement
+There is a generalisation relationship between  ClassEquipment LabEquipment Higher Secondary Student Student Primary Student Teacher Employee SupportStaff and Equipment
+There is a composition relationship between  Department and SchoolManagement
+There is an aggregation relationship between  Student Bus and SchoolManagement
