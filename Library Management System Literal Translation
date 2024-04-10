@@ -1,0 +1,68 @@
+There are 10 boxes in the diagram
+Box 1 is a rectangle and is titled Facaulty
+Box 2 is a rectangle and is titled Student
+Box 3 is a rectangle and is titled Bill
+Box 4 is a rectangle and is titled MemberRecord
+Box 5 is a rectangle and is titled StudyBooks
+Box 6 is a rectangle and is titled Magazines
+Box 7 is a rectangle and is titled Journals
+Box 8 is a rectangle and is titled Transaction
+Box 9 is a rectangle and is titled Librarian
+Box 10 is a rectangle and is titled Book
+
+The Facaulty box has 3 compartments seperated by 2 horizontal lines
+The Student box has 3 compartments seperated by 2 horizontal lines
+The Bill box has 3 compartments seperated by 2 horizontal lines
+The MemberRecord box has 3 compartments seperated by 2 horizontal lines
+The StudyBooks box has 3 compartments seperated by 2 horizontal lines
+The Magazines box has 3 compartments seperated by 2 horizontal lines
+The Journals box has 3 compartments seperated by 2 horizontal lines
+The Transaction box has 3 compartments seperated by 2 horizontal lines
+The Librarian box has 3 compartments seperated by 2 horizontal lines
+The Book box has 3 compartments seperated by 2 horizontal lines
+
+
+Facaulty box has the following texts in its compartments 
+Compartment 1:   Facaulty
+
+Student box has the following texts in its compartments 
+Compartment 1:   Student
+
+Bill box has the following texts in its compartments 
+Compartment 1:   Bill 
+Compartment 2:   +billNo,  +date,  +memberId,  +amount 
+Compartment 3:   +billCreate(),  +billUpdate()
+
+MemberRecord box has the following texts in its compartments 
+Compartment 1:   MemberRecord 
+Compartment 2:   +memberId,  +type,  +dateOfMembership,  +noBooksIssued,  +maxBookLimit,  +name,  +address,  +phoneNo 
+Compartment 3:   +retrieveMember(),  +increaseBookIssued(),  +decreaseBookIssued(),  +payBill()
+
+StudyBooks box has the following texts in its compartments 
+Compartment 1:   StudyBooks
+
+Magazines box has the following texts in its compartments 
+Compartment 1:   Magazines
+
+Journals box has the following texts in its compartments 
+Compartment 1:   Journals
+
+Transaction box has the following texts in its compartments 
+Compartment 1:   Transaction 
+Compartment 2:   +transId,  +memberId,  +bookId,  +dateOfIssue,  +dueDate 
+Compartment 3:   +createTransaction(),  +deleteTransaction(),  +retrieveTransaction()
+
+Librarian box has the following texts in its compartments 
+Compartment 1:   Librarian 
+Compartment 2:   +name,  +password 
+Compartment 3:   +searchBook(),  +verifyMember(),  +issueBook(),  +calculateFine(),  +createBill(),  +returnBook()
+
+Book box has the following texts in its compartments 
+Compartment 1:   Book 
+Compartment 2:   +bookId,  +author,  +name,  +price,  +rackNo,  +status,  +edition,  +dateOfPurchase 
+Compartment 3:   +displayBookDetails(),  +updateStatus()
+
+Connections
+===========
+A straight line  connects rectangles  Transaction Bill MemberRecord and Librarian
+A straight line with a white triangle head connects rectangles  Facaulty Student StudyBooks Magazines Book Journals and MemberRecord
