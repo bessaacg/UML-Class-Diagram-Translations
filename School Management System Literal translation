@@ -1,0 +1,120 @@
+There are 17 boxes in the diagram
+Box 1 is a rectangle and is titled NoticeBoard
+Box 2 is a rectangle and is titled ClassEquipment
+Box 3 is a rectangle and is titled LabEquipment
+Box 4 is a square and is titled Lab
+Box 5 is a rectangle and is titled Equipment
+Box 6 is a rectangle and is titled Classroom
+Box 7 is a rectangle and is titled Playground
+Box 8 is a rectangle and is titled Higher Secondary Student
+Box 9 is a rectangle and is titled Teacher
+Box 10 is a rectangle and is titled SupportStaff
+Box 11 is a rectangle and is titled Auditorium
+Box 12 is a rectangle and is titled Primary Student
+Box 13 is a rectangle and is titled Employee
+Box 14 is a rectangle and is titled Department
+Box 15 is a square and is titled Student
+Box 16 is a rectangle and is titled Bus
+Box 17 is a rectangle and is titled SchoolManagement
+
+The NoticeBoard box has 3 compartments seperated by 2 horizontal lines
+The ClassEquipment box has 2 compartments seperated by 1 horizontal lines
+The LabEquipment box has 2 compartments seperated by 1 horizontal lines
+The Lab box has 3 compartments seperated by 2 horizontal lines
+The Equipment box has 3 compartments seperated by 2 horizontal lines
+The Classroom box has 3 compartments seperated by 2 horizontal lines
+The Playground box has 3 compartments seperated by 2 horizontal lines
+The Higher Secondary Student box has 2 compartments seperated by 1 horizontal lines
+The Teacher box has 2 compartments seperated by 1 horizontal lines
+The SupportStaff box has 2 compartments seperated by 1 horizontal lines
+The Auditorium box has 3 compartments seperated by 2 horizontal lines
+The Primary Student box has 2 compartments seperated by 1 horizontal lines
+The Employee box has 3 compartments seperated by 2 horizontal lines
+The Department box has 3 compartments seperated by 2 horizontal lines
+The Student box has 3 compartments seperated by 2 horizontal lines
+The Bus box has 3 compartments seperated by 2 horizontal lines
+The SchoolManagement box has 3 compartments seperated by 2 horizontal lines
+
+
+NoticeBoard box has the following texts in its compartments 
+Compartment 1:   NoticeBoard 
+Compartment 2:   NewsList,  InchargeName 
+Compartment 3:   Display(),  AddContent()
+
+ClassEquipment box has the following texts in its compartments 
+Compartment 1:   ClassEquipment 
+Compartment 2:   ClassId,  BenchCount,  FanCount,  LightCount
+
+LabEquipment box has the following texts in its compartments 
+Compartment 1:   LabEquipment 
+Compartment 2:   EquipmentName,  EquipmentCount
+
+Lab box has the following texts in its compartments 
+Compartment 1:   Lab 
+Compartment 2:   LabId,  InchargeId,  LabName,  EquipmentId 
+Compartment 3:   LabDetails(),  IsOccupied(),  PayFine()
+
+Equipment box has the following texts in its compartments 
+Compartment 1:   Equipment 
+Compartment 2:   EquipmentId,  Cost 
+Compartment 3:   EquipmentDetails(),  PurchaseEquipment(),  Repair()
+
+Classroom box has the following texts in its compartments 
+Compartment 1:   Classroom 
+Compartment 2:   ClassId,  ClassName,  TeacherId,  StudentCount,  EquipmentId 
+Compartment 3:   ClassDetails()
+
+Playground box has the following texts in its compartments 
+Compartment 1:   Playground 
+Compartment 2:   Area,  ClassId 
+Compartment 3:   IsOccupied()
+
+Higher Secondary Student box has the following texts in its compartments 
+Compartment 1:   Higher Secondary Student
+
+Teacher box has the following texts in its compartments 
+Compartment 1:   Teacher
+
+SupportStaff box has the following texts in its compartments 
+Compartment 1:   SupportStaff
+
+Auditorium box has the following texts in its compartments 
+Compartment 1:   Auditorium 
+Compartment 2:   TotalSeats,  SeatsOccupied,  EventName,  EventDate,  EventTime 
+Compartment 3:   BookAuditorium(),  EventDetails(),  DisplaySeats()
+
+Primary Student box has the following texts in its compartments 
+Compartment 1:   Primary Student
+
+Employee box has the following texts in its compartments 
+Compartment 1:   Employee 
+Compartment 2:   EmployeeId,  EmployeeName,  Salary,  DepartmentId 
+Compartment 3:   EmployeeDetails(),  CheckIn(),  ReceiveSalary()
+
+Department box has the following texts in its compartments 
+Compartment 1:   Department 
+Compartment 2:   DepartmentId,  DepartmentName,  InchargeName,  MemberLst 
+Compartment 3:   DepartmentDetails()
+
+Student box has the following texts in its compartments 
+Compartment 1:   Student 
+Compartment 2:   StudentId,  StudentName,  ClassId,  Section,  BusId 
+Compartment 3:   StudentDetails(),  PayFees()
+
+Bus box has the following texts in its compartments 
+Compartment 1:   Bus 
+Compartment 2:   BusId,  DriverId,  AreaList,  BusNumber,  Capacity 
+Compartment 3:   BusDetails(),  ShowSeats()
+
+SchoolManagement box has the following texts in its compartments 
+Compartment 1:   SchoolManagement 
+Compartment 2:   SchoolName,  Address,  ContactNumber,  MediumOfStudy 
+Compartment 3:   isOpen(),  SchoolDetails()
+
+Connections
+===========
+A straight line with an arrow connects rectangles  NoticeBoard Classroom Bus and Student
+A straight line a straight line  connects rectangles  Auditorium Lab Equipment Playground Student Teacher and SchoolManagement
+A straight line with a white triangle head connects rectangles  ClassEquipment LabEquipment Higher Secondary Student Student Primary Student Teacher Employee SupportStaff and Equipment
+A straight line with a black diamond head connects rectangles  Department and SchoolManagement
+A straight line with a white diamond head connects rectangles  Student Bus and SchoolManagement
