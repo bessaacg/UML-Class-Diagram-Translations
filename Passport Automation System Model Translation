@@ -1,0 +1,50 @@
+There are 6 classes in the diagram
+These classes are System, «Services», Application, Officer, Applicant, and AbstractClass. See details below:
+Class 1: System
+Methods: 
+ public StartApplicationProcess()
+ public EndApplicationProcess()
+
+Class 2: «Services»
+Methods: 
+ public StoreApplication()
+ public RetrieveApplication()
+
+Class 3: Application
+Attributes: 
+ public ApplicationID
+ public Status
+Methods: 
+ public SubmitApplication()
+ public UpdateApplicationStatus()
+
+Class 4: Officer
+Attributes: 
+ public OfficerID
+ public Name
+Methods: 
+ public VerifyApplication()
+
+Class 5: Applicant
+Attributes: 
+ public Name
+ public DateOfBirth
+ public Address
+Methods: 
+ public ApplyForPassport()
+
+Class 6: AbstractClass
+Attributes: 
+ public PassportNo
+ public IssueDate
+ public ExpiryDate
+ public IssuePlace
+Methods: 
+ public ValidatePassport()
+
+
+Class Relationships`
+===================
+There is a generalisation relationship between  System and «Services»
+There is an associative relationship between  «Services» Officer Applicant AbstractClass and Application
+There is an aggregation relationship between  Application and Applicant
